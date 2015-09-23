@@ -1,0 +1,75 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 112.5%;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.45;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga", "kern";
+    text-rendering: optimizelegibility;
+}
+
+a {
+    color: #08c;
+}
+a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.45em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.content-center {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 84px;
+    font-weight: 200;
+    letter-spacing: -0.01em;
+    line-height: 1.14286;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: -0.01em;
+    line-height: 1.14286;
+}
