@@ -82,7 +82,39 @@ h3 {
     margin: 0;
 }
 
-.directory-section {
+.directory::before .directory::after {
+    content: " ";
+    display: table;
+}
+
+.directory::after {
+    clear: both;
+}
+
+.directory {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.66667;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.directory.with-3-columns .directory-column {
+    width: 33.33%;
+}
+
+.directory-column {
+    float: left;
+    margin: 0;
+    min-height: 2px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.directory-column-section {
     margin: 0;
     min-height: 2px;
     padding: 0;
@@ -92,17 +124,17 @@ h3 {
     z-index: 1;
 }
 
-.directory-section .directory-section-list .directory-section-item .directory-section-link {
+.directory-column-section .directory-section-list .directory-section-item .directory-section-link {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.66667;
 }
 
-.directory-section .directory-section-list {
+.directory-column-section .directory-section-list {
     letter-spacing: normal;
 }
 
-.directory-section .directory-section-list .directory-section-item {
+.directory-column-section .directory-section-list .directory-section-item {
     color: #666;
 }
 
