@@ -12,14 +12,13 @@ html {
     font-size: 112.5%;
 }
 
+
 body {
-    background-color: #fff;
-    color: #333;
+    color: #000;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 1.45;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 16px;
 }
 
 body {
@@ -169,4 +168,20 @@ a.directory-section-link {
 
 .directory-section-link {
     pointer-events: auto;
+}
+
+
+
+
+
+.nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2em;
+    padding: 1em 0 0.5em;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    text-decoration: none;
 }
