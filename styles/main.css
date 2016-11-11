@@ -1,17 +1,6 @@
 html {
-    font-size: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-html {
     font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
-    font-size: 112.5%;
 }
-
 
 body {
     color: #000;
@@ -19,9 +8,7 @@ body {
     margin: 0 auto;
     max-width: 700px;
     padding: 16px;
-}
 
-body {
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga", "kern";
     text-rendering: optimizelegibility;
@@ -185,3 +172,7 @@ a.directory-section-link {
     margin: 0 1em 0 0;
     text-decoration: none;
 }
+
+.left { float: left !important; }
+.right { float: right !important; }
+.clear { clear: both !important; }
