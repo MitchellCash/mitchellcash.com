@@ -1,6 +1,9 @@
 markdown: kramdown
 highlighter: rouge
 
+gems:
+  - jekyll-sitemap
+
 exclude:
   - Gemfile
   - Gemfile.lock
