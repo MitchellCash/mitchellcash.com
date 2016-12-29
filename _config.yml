@@ -15,5 +15,9 @@ gems:
   - jekyll-sitemap
 
 exclude:
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
   - Gemfile
   - Gemfile.lock
+  - README.md
