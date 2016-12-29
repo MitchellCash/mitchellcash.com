@@ -1,14 +1,10 @@
-html {
-    font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-
 body {
-    color: #000;
-    font-size: 18px;
+    color: #222222;
+    font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 1.125em;
     margin: 0 auto;
     max-width: 700px;
     padding: 16px;
-
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga", "kern";
     text-rendering: optimizelegibility;
@@ -17,6 +13,7 @@ body {
 a {
     color: #08c;
 }
+
 a:visited, a:link, a:active {
     text-decoration: none;
 }
@@ -39,38 +36,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 84px;
     font-weight: 200;
-    letter-spacing: -0.01em;
-    line-height: 1.14286;
+    font-size: 4.5em;
+    margin-top: 0;
+    margin-bottom: 0.25em;
 }
 
 h2 {
-    margin-bottom: 18px;
-}
-
-h2 {
-    font-size: 42px;
+    font-size: 2.25em;
+    margin-bottom: 0;
+    line-height: 1.25;
     font-weight: 200;
-    letter-spacing: -0.01em;
-    line-height: 1.14286;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 600;
-    letter-spacing: normal;
-    line-height: 1.66667;
-    margin: 0;
-}
-
-.directory::before .directory::after {
-    content: " ";
-    display: table;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .directory::after {
@@ -156,10 +139,6 @@ a.directory-section-link {
 .directory-section-link {
     pointer-events: auto;
 }
-
-
-
-
 
 .nav {
     border-bottom: 1px solid #eee;

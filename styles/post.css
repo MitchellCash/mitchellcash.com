@@ -1,0 +1,70 @@
+body {
+    color: #222222;
+    font-family: "Source Sans Pro","Open Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 1.125em;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga", "kern";
+    text-rendering: optimizelegibility;
+}
+
+a {
+    color: #08c;
+}
+
+a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.45em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2em;
+    padding: 1em 0 0.5em;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    text-decoration: none;
+}
+
+.left { float: left !important; }
+.right { float: right !important; }
+.clear { clear: both !important; }
