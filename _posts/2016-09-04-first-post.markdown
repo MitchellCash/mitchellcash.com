@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: post
 title: First post
 ---
-
-# {{ page.title }}
 
 I am thinking about sporadically writing blog posts again and after a little bit of research it seemed like utilising GitHub Pages was the way to go.
 

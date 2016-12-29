@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: post
 title: Getting Started With Ethereum's Swarm on the Testnet
 ---
 
-# {{ page.title }}
-
-*This guide is focused on the Linux Ubuntu and Debian variants*
+*This guide is focused on the Linux Ubuntu and Debian variants.*
 
 ## What is Swarm?
 Swarm is a distributed storage platform and content distribution service, a native base layer service of the Ethereum Web3 stack. The primary objective of Swarm is to provide a sufficiently decentralized and redundant store of Ethereum’s public record, in particular to store and distribute Ðapp code and data as well as block chain data. From an economic point of view, it allows participants to efficiently pool their storage and bandwidth resources in order to provide the aforementioned services to all participants.
