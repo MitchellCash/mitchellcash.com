@@ -1,7 +1,14 @@
 markdown: kramdown
 highlighter: rouge
 
+repository: https://github.com/mitchellcash/mitchellcash.com
+
+name: Mitchell Cash
+description: Sort of geeky, sort of not.
+url: https://mitchellcash.com
+
 gems:
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 exclude:
