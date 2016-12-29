@@ -10,6 +10,7 @@ description: Sort of geeky, sort of not.
 url: https://mitchellcash.com
 
 gems:
+  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
