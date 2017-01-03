@@ -2,11 +2,20 @@
 layout: default
 ---
 
-<ul>
+<h1 class="blog-h1">Blog</h1>
+
+<ul class="blog-ul">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
+        <h2 class="blog-h2">
+            <a class="blog-a" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <span class="blog-span">{{ post.date | date: "%-d %B %Y" }}</span>
+        {{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
+
+<div class="blog-subscribe-rss">
+    <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>.</p>
+</div>

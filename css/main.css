@@ -155,3 +155,36 @@ a.directory-section-link {
 .left { float: left !important; }
 .right { float: right !important; }
 .clear { clear: both !important; }
+
+/* Blog
+   ========================================================================== */
+
+.blog-h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    padding-top: 0.5em;
+}
+
+.blog-h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.blog-span {
+    color: #888;
+    font-size: 0.75em;
+}
+
+.blog-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-subscribe-rss p {
+    margin-top: 3em;
+    font-size: 0.75em;
+}
