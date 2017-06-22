@@ -9,7 +9,7 @@ name: Mitchell Cash
 description: Sort of geeky, sort of not.
 url: https://mitchellcash.com
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
