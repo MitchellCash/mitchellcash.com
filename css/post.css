@@ -10,6 +10,12 @@ body {
     text-rendering: optimizelegibility;
 }
 
+img {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
 a {
     color: #08c;
 }
@@ -68,3 +74,7 @@ h3 {
 .left { float: left !important; }
 .right { float: right !important; }
 .clear { clear: both !important; }
+
+div[class^="language-"] {
+    overflow: auto;
+}
