@@ -1,6 +1,4 @@
-markdown: kramdown
-highlighter: rouge
-
+# Site settings
 google_site_verification: N7sEg6tK0pPTUGiQS-9HPxwslCIeI32mjF3V2GmHpbk
 
 repository: https://github.com/mitchellcash/mitchellcash.com
@@ -9,16 +7,32 @@ name: Mitchell Cash
 description: Sort of geeky, sort of not.
 url: https://mitchellcash.com
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
+# Build settings
+markdown: kramdown
 
 exclude:
-  - .editorconfig
-  - .gitattributes
-  - .gitignore
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - vendor
+    - .editorconfig
+    - .gitattributes
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - vendor
+
+plugins:
+    - jekyll-assets
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - uglifier
+
+assets:
+    compress:
+        css: true
+        js: true
+
+    prefix: /assets
+
+    sources:
+        - _assets/css
+        - _assets/js
