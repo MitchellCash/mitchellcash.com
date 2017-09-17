@@ -1,36 +1,37 @@
-# Site settings
-repository: https://github.com/mitchellcash/mitchellcash.com
+safe:        false
+port:        4000
+## Used in older version of Jekyll
+base-url:    /
+## Used in newer versions of Jekyll
+baseurl:    /
 
-name: Mitchell Cash
-description: Sort of geeky, sort of not.
-url: https://mitchellcash.com
-
-# Build settings
-markdown: kramdown
-
-exclude:
-    - .editorconfig
-    - .gitattributes
-    - .gitignore
-    - Gemfile
-    - Gemfile.lock
-    - README.md
-    - vendor
-
+source:      .
+destination: ./_site
 plugins:
     - jekyll-assets
     - jekyll-feed
     - jekyll-seo-tag
     - jekyll-sitemap
     - uglifier
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - vendor  # Travis CI creates a vendor/ dir with files we shouldn't render
+
+markdown:    kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+
+## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
+sass:
+  style: compressed
 
 assets:
     compress:
-        css: true
         js: true
 
     prefix: /assets
 
     sources:
-        - _assets/css
         - _assets/js

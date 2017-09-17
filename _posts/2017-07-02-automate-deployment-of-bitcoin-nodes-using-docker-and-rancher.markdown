@@ -25,31 +25,31 @@ Next, select a **1GB** Droplet and choose a datacenter region for your Droplet.
 
 Then select **User Data** in the **Select additional options** section, and enter the script below in the text box that appears. This script tells the Droplet to fetch the `rancher/server` Docker image and start a Rancher server in a container upon start-up.
 
-```shell
+~~~ shell
 #!/bin/bash
 docker run -d --name rancher-server -p 80:8080 rancher/server
-```
+~~~
 
 Finally, add your SSH keys, provide a host name for your Droplet, and press the **Create** button. Then wait while your new server is created. Once the server starts, Docker will download a Rancher image and start the Rancher server, which make take a few more minutes.
 
 To double-check that Rancher is running, log in to your new Droplet:
 
-```shell
+~~~ shell
 $ ssh root@your_ip_address
-```
+~~~
 
 Once logged in, get a list of running Docker containers:
 
-```shell
+~~~ shell
 $ docker ps
-```
+~~~
 
 You'll see the following, which confirms Rancher is running:
 
-```shell
+~~~ shell
 Output
 ec5492f1b628    rancher/server  "/usr/bin/entry /usr/"  15 seconds ago  Up 13 seconds   3306/tcp, 0.0.0.0:80->8080/tcp  rancher-server
-```
+~~~
 
 If you don't see this, wait a few minutes and try again. Once you verify that Rancher is running, you can log out of the machine.
 
@@ -89,7 +89,7 @@ We'll still be using this script, but will also need another script to automate 
 
 Create a new shell script called `do-provision-volume.sh` and paste in the below code (setting the do_token variable with your actual DigitalOcean token).
 
-```shell
+~~~ shell
 #!/bin/sh
 set -e
 
@@ -127,18 +127,18 @@ echo /dev/disk/by-id/scsi-0DO_Volume_${do_volume_name} /mnt/${do_volume_name} ex
 
 # Create a bitcoind-data volume to persist the bitcoind blockchain data
 docker volume create --name=bitcoind-data --opt device=/mnt/${do_volume_name} --opt o=bind
-```
+~~~
 
 Then tie it all together with an `install.sh` script. Make sure to update the second curl URL with the hosted location of your `do-provision-volume.sh` script.
 
-```shell
+~~~ shell
 #!/bin/sh
 set -e
 
 curl -s -o- https://releases.rancher.com/install-docker/1.12.sh | bash
 
 curl -s -o- http://your_server_ip_or_fqdn/do-provision-volume.sh | bash
-```
+~~~
 
 You can find examples of these scripts over on my [install-docker Github repository](https://github.com/mitchellcash/install-docker).
 
@@ -211,9 +211,9 @@ Once your compute nodes are provisioned, click on the name of one of your hosts 
 
 You can also remote into the host and access the daemon's output thanks to the [docker logs command](https://docs.docker.com/engine/reference/commandline/logs/). You can find your Docker ID by opening the bitcoind-node container in the Rancher UI.
 
-```shell
+~~~ shell
 $ docker logs -f docker_id
-```
+~~~
 
 The last check you can do is enter your host IP and port 8333 into the **Check Node** tool over at [Bitnodes](https://bitnodes.21.co/).
 
