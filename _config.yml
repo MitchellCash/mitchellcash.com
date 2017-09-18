@@ -8,7 +8,6 @@ baseurl:    /
 source:      .
 destination: ./_site
 plugins:
-    - jekyll-assets
     - jekyll-feed
     - jekyll-sitemap
     - uglifier
