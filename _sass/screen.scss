@@ -4,28 +4,9 @@ body {
     color: #222222;
     font-size: 1.125em;
     margin: 0 auto;
-    max-width: 700px;
-    padding: 16px;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "liga", "kern";
     text-rendering: optimizelegibility;
-}
-
-nav {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-nav ul li {
-    float: none;
-}
-
-a {
-    color: #08c;
-}
-
-a:visited, a:link, a:active {
-    text-decoration: none;
 }
 
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
@@ -40,8 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-
-
 
 h1 {
     font-weight: 200;
@@ -80,8 +59,19 @@ code {
     font-size: 1em;
 }
 
-
 /*Styles for whole website*/
+
+/* Navbar */
+
+nav ul a:hover {
+    background-color: transparent;
+}
+
+.nav-border {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+/* Content */
 
 .content-center {
     text-align: center;
@@ -170,22 +160,6 @@ a.directory-section-link {
 .directory-section-link {
     pointer-events: auto;
 }
-
-.nav {
-    border-bottom: 1px solid #eee;
-    margin-bottom: 2em;
-    padding: 1em 0 0.5em;
-}
-
-.nav a {
-    display: inline-block;
-    margin: 0 1em 0 0;
-    text-decoration: none;
-}
-
-.left { float: left !important; }
-.right { float: right !important; }
-.clear { clear: both !important; }
 
 /* Blog
    ========================================================================== */

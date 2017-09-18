@@ -6,8 +6,22 @@
 </head>
 
 <body>
-    {% include nav.html %}
-    {{ content }}
+    <header>
+        <nav class="transparent z-depth-0">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="nav-border">
+                        {% include layout/base/head-menu.html %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
     {% include layout/base/footer-js.html %}
     {% include analytics.html %}
     <!-- Built with love by Mitchell Cash -->
