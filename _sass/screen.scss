@@ -220,22 +220,20 @@ a.directory-section-link {
     font-size: 0.75em;
 }
 
+/* Blog Post */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.post {
+    /* font-family: sans-serif; */
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    color: rgba(0,0,0,.8);
+    font-size: 18px;
+    line-height: 1.4;
+}
 
 .post img {
     max-width: 700px;
@@ -265,18 +263,8 @@ a.directory-section-link {
     margin-bottom: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Syntax Highlighting */
+
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
