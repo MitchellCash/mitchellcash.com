@@ -1,8 +1,8 @@
 body {
     font-size: 17px;
-    line-height: 1.52947;
+    line-height: 1.5;
     font-weight: 400;
-    letter-spacing: -.021em;
+    letter-spacing: -.02em;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-synthesis: none;
@@ -34,6 +34,11 @@ h3 {
 /* Navbar
    ========================================================================== */
 
+nav .brand-logo {
+    position: inherit;
+    font-size: 21px;
+}
+
 nav ul a:hover {
     background-color: transparent;
 }
@@ -45,7 +50,6 @@ nav ul a:hover {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: normal;
-    line-height: 1.66667;
     padding-top: 20px;
     position: relative;
     z-index: 1;
