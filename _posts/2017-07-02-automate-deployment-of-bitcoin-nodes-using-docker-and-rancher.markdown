@@ -13,13 +13,13 @@ I will be using DigitalOcean to host Rancher and the Bitcoin Full Nodes.
 
 *Large parts of this guide have been taken verbatim from DigitalOcean's [How To Manage Multi-Node Deployments with Rancher and Docker Machine on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-manage-multi-node-deployments-with-rancher-and-docker-machine-on-ubuntu-16-04) guide. There is no need to reinvent the wheel, where it makes sense, but there are some important changes I have made to apply specifically to the deployment of Bitcoin Nodes and automating block storage provisioning to store the blockchain (as of this writing 122 GB).*
 
-## Step 1 — Creating a DigitalOcean Droplet to Host Rancher
+### Step 1 — Creating a DigitalOcean Droplet to Host Rancher
 
 In order to use Rancher to manage Docker hosts and containers, we need to get Rancher running. We'll use DigitalOcean's Docker image and a bit of **User Data** to get up and running quickly.
 
 First, log into your DigitalOcean account and choose **Create Droplet**. Then, under the **Choose an Image** section, select the **One-click Apps** tag. Select the **Docker 17.05.0** for **Ubuntu 16.04** image.
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/1.png" alt="Docker image">
+![Docker image](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/1.png){:.materialboxed .responsive-img}
 
 Next, select a **1GB** Droplet and choose a datacenter region for your Droplet.
 
@@ -53,13 +53,13 @@ ec5492f1b628    rancher/server  "/usr/bin/entry /usr/"  15 seconds ago  Up 13 se
 
 If you don't see this, wait a few minutes and try again. Once you verify that Rancher is running, you can log out of the machine.
 
-## Step 2 - Configuring Authentication for Rancher
+### Step 2 - Configuring Authentication for Rancher
 
 Once your server is up, browse to `http://your_server_ip/` to bring up the Rancher UI. Because the Rancher server is currently open to the Internet, it's a good idea to set up authentication so the public can't make changes to our environment. Let's configure Rancher to use Github OAuth-based authentication.
 
 You will see a warning icon next to the **ADMIN** menu item at the top of the screen.
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/2.png" alt="Access control is not configured">
+![Access control is not configured](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/2.png){:.materialboxed .responsive-img}
 
 If you hover over this link, you'll see the message **Access Control is not configured**. Choose **Access Control** from the **ADMIN** menu. Github will be selected as the default authentication method, so follow the instructions on the page to register a new application with GitHub.
 
@@ -69,13 +69,13 @@ Then, under **Test and enable authentication**, click **Authenticate with GitHub
 
 Next, let's create an *environment* to organise our compute hosts.
 
-## Step 3 — Creating an Environment
+### Step 3 — Creating an Environment
 
 An environment in Rancher lets us group our hosts into logical sets. Rancher provides an environment called **Default**, but let's create our own. Click the **Default** link at the top of the screen to reveal the **Environments** menu, then click **Manage Environments**. Click the **Add Environment** button that appears on the page.
 
 Fill in `Bitcoin Mainnet` as the name for your project. Leave all of the other settings at their defaults and click **Create**. Then use the project selection menu again to select your new environment.
 
-## Step 4 - Create a custom Docker Install script
+### Step 4 - Create a custom Docker Install script
 
 This is where things get a bit trickier. As previously mentioned the Bitcoin blockchain is currently a whopping 122 GB and we need to store that somewhere. DigitalOcean (and for that matter most other VPS providers) doesn't offer enough storage on there basic VPS plans, unless you want to start paying upwards of $160 USD per month.
 
@@ -146,7 +146,7 @@ You can find examples of these scripts over on my [install-docker Github reposit
 
 Now let's launch some hosts in our Bitcoin Mainnet environment using the new install script.
 
-## Step 5 — Launching Rancher Compute Nodes
+### Step 5 — Launching Rancher Compute Nodes
 
 Once you have secured your Rancher deployment and added a project, select **Hosts** from the **Infrastructure** menu and then click the **Add Host** button.
 
@@ -154,7 +154,7 @@ On the **Add Host** screen, you will see several providers: **Custon**, **Amazon
 
 Select the **DigitalOcean** option, as shown in the following figure:
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/3.png" alt="Add host">
+![Add host](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/3.png){:.materialboxed .responsive-img}
 
 In the **Access Token** field, place your Personal Access Token for the DigitalOcean API. Then press **Next: Configure Droplet**.
 
@@ -174,11 +174,11 @@ Finally, click Create. Rancher will use Docker Machine to create the specified D
 
 Within a few minutes you'll see your new host in the Rancher UI. You will also get some basic information about the host such as its IP address, processor clock-speed, memory, and storage.
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/4.png" alt="Running host">
+![Running host](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/4.png){:.materialboxed .responsive-img}
 
 You can repeat this step as many times as you need to launch more compute nodes into your deployment.
 
-## Step 6 — Launching your Bitcoin Node Docker Image
+### Step 6 — Launching your Bitcoin Node Docker Image
 
 Once you open up your host in the Rancher UI, click on the **Add Container** button.
 
@@ -203,11 +203,11 @@ Click Create. Rancher will now run the `kylemanna/bitcoind` Docker image and exp
 
  Now let's explore Rancher's built-in monitoring, and how to deactive and delete notes.
 
-## Step 7 - Monitoring and Scaling Your Deployment
+### Step 7 - Monitoring and Scaling Your Deployment
 
 Once your compute nodes are provisioned, click on the name of one of your hosts to pull up the Monitoring screen, where you can see the CPU utilization and memory consumption of that compute node.
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/5.png" alt="Monitoring host">
+![Monitoring host](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/5.png){:.materialboxed .responsive-img}
 
 You can also remote into the host and access the daemon's output thanks to the [docker logs command](https://docs.docker.com/engine/reference/commandline/logs/). You can find your Docker ID by opening the bitcoind-node container in the Rancher UI.
 
@@ -217,14 +217,14 @@ $ docker logs -f docker_id
 
 The last check you can do is enter your host IP and port 8333 into the **Check Node** tool over at [Bitnodes](https://bitnodes.21.co/).
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/6.png" alt="Bitnodes check Bitcoin Node">
+![Bitnodes check Bitcoin Node](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/6.png){:.materialboxed .responsive-img}
 
 To add more Bitcoin Nodes to the network, just repeat steps 3 to 6 above. You can shut down any additional nodes by visiting the **Hosts** page, locating your host, and clicking the **Deactivate** icon (the box with two vertical lines, as shown in the following figure:
 
-<img src="/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/7.png" alt="Scale up new host">
+![Scale up new host](/img/posts/2017-07-02-automate-deployment-of-bitcoin-nodes-using-docker-and-rancher/7.png){:.materialboxed .responsive-img}
 
 You can then subsequently click either **Activate** or **Delete** from the menu to the right of the **Deactivate** button.
 
-## Conclusion
+### Conclusion
 
 It may not be the perfect use or demonstration of Rancher, but I'm interested in cryptocurrencies and also trying new things, so this is what you get!

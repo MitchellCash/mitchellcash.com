@@ -10,16 +10,17 @@
         <nav class="transparent z-depth-0">
             <div class="container">
                 <div class="nav-wrapper">
-                    <div class="nav-border">
-                        {% include layout/base/head-menu.html %}
-                    </div>
+                    {% include layout/base/head-menu.html %}
                 </div>
+                <div class="divider"></div>
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            {{ content }}
+            <div class="section">
+                {{ content }}
+            </div>
         </div>
     </main>
     {% include layout/base/footer-js.html %}

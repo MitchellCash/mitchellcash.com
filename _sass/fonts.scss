@@ -1,3 +1,11 @@
+/* Slabo 27px */
+
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url('../fonts/Slabo 27px/Slabo27px-Regular.ttf') format('truetype');
+}
 
 /* Inconsolata */
 
@@ -5,12 +13,12 @@
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(../fonts/Inconsolata/Inconsolata-Regular.ttf) format('truetype');
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url('../fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 700;
-  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(../fonts/Inconsolata/Inconsolata-Bold.ttf) format('truetype');
+  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url('../fonts/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
 }
