@@ -24,12 +24,3 @@ kramdown:
 ## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
 sass:
   style: compressed
-
-assets:
-    compress:
-        js: true
-
-    prefix: /assets
-
-    sources:
-        - _assets/js
