@@ -140,6 +140,22 @@ nav ul a:hover {
     font-size: 1em;
 }
 
+blockquote {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,.68);
+    border: none;
+    padding: 0;
+    padding-left: 0px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
 /* Syntax Highlighting
    ========================================================================== */
 
