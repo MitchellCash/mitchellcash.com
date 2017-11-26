@@ -1,5 +1,14 @@
-#!/usr/bin/env bash
-set -e # halt script on error
+#!/bin/sh
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site
+set -e
+
+script/build
+
+if test -e "./_site/index.html";then
+  echo "It builds!"
+else
+  echo "Huh. That's odd. The site doesn't seem to build."
+  exit 1
+fi
+
+script/htmlproofer
