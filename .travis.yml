@@ -3,7 +3,7 @@ language: ruby
 cache: bundler
 # Run each build in a container to reduce the time a build takes to start
 sudo: false
-rvm: 2.3.5
+rvm: 2.3.3
 
 install: script/bootstrap
 script: script/cibuild
