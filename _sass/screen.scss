@@ -4,31 +4,13 @@ body {
     font-weight: 400;
     letter-spacing: -.02em;
     font-family: 'Noto Sans', sans-serif;
+    background-color: #fff;
+    color: #333;
     font-style: normal;
     font-synthesis: none;
     -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-h1 {
-    font-weight: 200;
-    font-size: 4.5em;
-    margin-top: 0;
-    margin-bottom: 0.25em;
-}
-
-h2 {
-    font-size: 2.25em;
-    margin-bottom: 0;
-    line-height: 1.25;
-    font-weight: 200;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: 600;
-    margin-top: 2em;
-    margin-bottom: 1em;
 }
 
 /* Navbar
@@ -47,16 +29,16 @@ nav ul a:hover {
     overflow: auto;
 }
 
-/* Home Page Content
+/* Home Page
    ========================================================================== */
 
-.directory {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: normal;
-    padding-top: 20px;
-    position: relative;
-    z-index: 1;
+.list-title {
+    font-weight: 700;
+}
+
+.list-item {
+    font-size: 0.8rem;
+    color: #333;
 }
 
 /* Blog Post List
