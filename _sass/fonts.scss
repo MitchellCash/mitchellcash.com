@@ -1,82 +1,186 @@
-/* Inconsolata */
+/* Crimson Text */
 @font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url('../fonts/Inconsolata/Inconsolata-Regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url('../fonts/Inconsolata/Inconsolata-Bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-/* Noto Sans */
-@font-face {
-  font-family: 'Noto Sans';
+  font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 400;
-  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url('../fonts/Noto-Sans/NotoSans-Italic.woff2') format('woff2');
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url('../fonts/CrimsonText/v8/CrimsonText-Italic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Sans';
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url('../fonts/CrimsonText/v8/CrimsonText-SemiBoldItalic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 700;
-  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url('../fonts/Noto-Sans/NotoSans-BoldItalic.woff2') format('woff2');
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url('../fonts/CrimsonText/v8/CrimsonText-BoldItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Sans';
+  font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Sans'), local('NotoSans'), url('../fonts/Noto-Sans/NotoSans.woff2') format('woff2');
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url('../fonts/CrimsonText/v8/CrimsonText-Regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Sans';
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url('../fonts/CrimsonText/v8/CrimsonText-SemiBold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 700;
-  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('../fonts/Noto-Sans/NotoSans-Bold.woff2') format('woff2');
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url('../fonts/CrimsonText/v8/CrimsonText-Bold.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-/* Noto Serif */
+/* Open Sans */
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url('../fonts/OpenSans/v15/OpenSans-LightItalic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('Noto Serif Italic'), local('NotoSerif-Italic'), url('../fonts/Noto-Serif/NotoSerif-Italic.woff2') format('woff2');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/OpenSans/v15/OpenSans-Italic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url('../fonts/OpenSans/v15/OpenSans-SemiBoldItalic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
-  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url('../fonts/Noto-Serif/NotoSerif-BoldItalic.woff2') format('woff2');
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/OpenSans/v15/OpenSans-BoldItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url('../fonts/OpenSans/v15/OpenSans-ExtraBoldItalic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans/v15/OpenSans-Light.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Noto Serif'), local('NotoSerif'), url('../fonts/Noto-Serif/NotoSerif.woff2') format('woff2');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/OpenSans/v15/OpenSans-Regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('../fonts/OpenSans/v15/OpenSans-SemiBold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url('../fonts/Noto-Serif/NotoSerif-Bold.woff2') format('woff2');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans/v15/OpenSans-Bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('../fonts/OpenSans/v15/OpenSans-ExtraBold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Source Code Pro */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Code Pro ExtraLight'), local('SourceCodePro-ExtraLight'), url('../fonts/SourceCodePro/v7/SourceCodePro-ExtraLight.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url('../fonts/SourceCodePro/v7/SourceCodePro-Light.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url('../fonts/SourceCodePro/v7/SourceCodePro-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Source Code Pro Medium'), local('SourceCodePro-Medium'), url('../fonts/SourceCodePro/v7/SourceCodePro-Medium.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Code Pro Semibold'), local('SourceCodePro-Semibold'), url('../fonts/SourceCodePro/v7/SourceCodePro-Semibold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url('../fonts/SourceCodePro/v7/SourceCodePro-Bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Code Pro Black'), local('SourceCodePro-Black'), url('../fonts/SourceCodePro/v7/SourceCodePro-Black.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
