@@ -2,7 +2,7 @@
 
 Current Build Status: [![Build Status](https://travis-ci.org/mitchellcash/mitchellcash.com.svg?branch=master)](https://travis-ci.org/mitchellcash/mitchellcash.com)
 
-Current Dependency Status: [![Dependency Status](https://gemnasium.com/badges/github.com/mitchellcash/mitchellcash.com.svg)](https://gemnasium.com/github.com/mitchellcash/mitchellcash.com)
+Current Known Vulnerabilities: [![Known Vulnerabilities](https://snyk.io/test/github/mitchellcash/mitchellcash.com/badge.svg)](https://snyk.io/test/github/mitchellcash/mitchellcash.com)
 
 Live Site: [MitchellCash.com](https://mitchellcash.com)
 
