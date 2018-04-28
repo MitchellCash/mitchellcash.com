@@ -1,12 +1,15 @@
 ---
 layout: base
 ---
-<div class="post">
-    <div class="post-date grey-text">{{ page.date | date: "%-d %B %Y" }}</div>
 
-    <h1 class="post-title">{{ page.title }}</h1>
+<div class="row justify-content-center">
+    <div class="col-10">
+        <p><small class="text-muted">{{ page.date | date: "%-d %B %Y" }}</small></p>
 
-    <article class="post-content">
-        {{ content }}
-    </article>
+        <h1 class="font-weight-bold">{{ page.title }}</h1>
+
+        <article class="post-content">
+            {{ content }}
+        </article>
+    </div>
 </div>

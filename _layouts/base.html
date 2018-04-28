@@ -6,21 +6,19 @@
 </head>
 
 <body>
-    <header>
-        <nav class="transparent z-depth-0">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-sm navbar-light">
             <div class="container">
-                <div class="nav-wrapper">
-                    {% include layout/base/head-menu.html %}
-                </div>
-                <div class="divider"></div>
+                {% include layout/base/head-menu.html %}
             </div>
         </nav>
+        <div class="container">
+            <hr class="mb-0 mt-0"></hr>
+        </div>
     </header>
     <main>
         <div class="container">
-            <div class="section">
-                {{ content }}
-            </div>
+            {{ content }}
         </div>
     </main>
     {% include layout/base/footer-js.html %}

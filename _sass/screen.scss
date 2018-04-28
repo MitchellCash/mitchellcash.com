@@ -1,11 +1,8 @@
 body {
-    font-size: 17px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: -.02em;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    letter-spacing: -.02em;
     background-color: #fff;
-    color: #333;
     font-style: normal;
     font-synthesis: none;
     -moz-font-feature-settings: 'kern';
@@ -13,130 +10,29 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Navbar
-   ========================================================================== */
-
-nav .brand-logo {
-    position: inherit;
-    font-size: 21px;
-}
-
-nav ul a:hover {
-    background-color: transparent;
-}
-
-.nav-wrapper {
-    overflow: auto;
-}
-
-/* Home Page
-   ========================================================================== */
-
-.list-title {
-    font-weight: 700;
-}
-
-.list-item {
-    font-size: 0.8rem;
-    color: #333;
-}
-
-/* Blog Post List
-   ========================================================================== */
-
-.card-panel {
-    box-shadow: none;
-}
-
-.post-list a {
-    color: inherit;
-}
-
-.post-list-title {
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: .015em;
-    margin: 29px 0 0;
-    word-wrap: break-word;
-}
-
-.post-list-date {
-    font-size: 14px;
-    letter-spacing: .1em;
-}
-
-.blog-subscribe-rss p {
-    margin-top: 3em;
-    font-size: 0.75em;
-}
-
 /* Blog Post
    ========================================================================== */
 
-.post {
-    width: 80%;
-    margin: 0 auto;
+.post-content {
+    font-family: 'Crimson Text', serif;
 }
 
-.post-date {
-    font-size: 14px;
-    letter-spacing: .1em;
-    padding-bottom: 10px;
-}
-
-.post-title {
-    font-weight: 700;
-    font-size: 40px;
-    margin-left: -2.5px;
-    line-height: 1.04;
-    letter-spacing: -.028em;
-}
-
-.post-subtitle {
-}
-
-.post h3 {
+.post-content h3 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    margin-left: -2px;
     line-height: 1.15;
     letter-spacing: -.02em;
 }
 
-.post-content {
-    font-family: 'Crimson Text', serif;
-    font-size: 21px;
-    line-height: 1.58;
-    letter-spacing: -.003em;
-}
-
 .post-content pre {
-    margin: 0;
-    margin-top: 43px;
     font-family: 'Source Code Pro', monospace;
-    font-size: 16px;
     background: rgba(0,0,0,.05);
     padding: 20px;
-    white-space: pre-wrap;
-    overflow: auto;
-}
-
-.post-content code {
-    font-family: inherit;
-    font-size: 1em;
 }
 
 blockquote {
-    margin-top: 55px;
-    margin-bottom: 55px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(0,0,0,.68);
-    border: none;
-    padding: 0;
-    padding-left: 0px;
     padding-left: 50px;
-    text-align: left;
 }
 
 blockquote p {

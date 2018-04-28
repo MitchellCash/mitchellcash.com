@@ -2,22 +2,20 @@
 layout: base
 ---
 
-<h1 class="">Blog</h1>
+<h1 class="display-4">Blog</h1>
 
-<div class="blog-subscribe-rss">
-    <p>Subscribe <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a>.</p>
+<div class="">
+    <p><small class="text-muted">Subscribe <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a>.</small></p>
 </div>
 
 {% for post in site.posts %}
-<div class="row post-list">
-    <div class="col l12">
-        <a href="{{ post.url }}">
-            <div class="card-panel hoverable grey lighten-4">
-                <span class="post-list-date">{{ post.date | date: "%-d %B %Y" }}</span>
-                <h3 class="post-list-title">{{ post.title }}</h3>
-                <p class="grey-text text-darken-3">{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </div>
-        </a>
-    </div>
+<div class="card mb-3">
+    <a class="card-body text-body text-left" style="text-decoration:none;" href="{{ post.url }}">
+        <div class="card-body">
+            <p class="card-text"><small class="text-muted">{{ post.date | date: "%-d %B %Y" }}</small></p>
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.content | strip_html | truncatewords: 50 }}</p>
+        </div>
+    </a>
 </div>
 {% endfor %}

@@ -21,7 +21,7 @@ Holders of Bitcoin continue to have the same number of Bitcoins as before the fo
 
 What tends to happen in these scenarios is that people rush to sell their "bonus" coins. This can be seen when Bitcoin Cash forked from Bitcoin in August of this year and lost as much as 50% of its market cap within the first 3 days.
 
-![Bitcoin Cash Chart](/img/posts/2017-11-21-how-to-secure-your-bitcoin-or-other-cryptocurrency-befork-its-too-late/1.png){:.materialboxed .responsive-img}
+![Bitcoin Cash Chart](/img/posts/2017-11-21-how-to-secure-your-bitcoin-or-other-cryptocurrency-befork-its-too-late/1.png){:.img-fluid}
 
 All of this seems innocent enough, but Gavin points out that unless you have the technical ability to audit the code, you could unknowingly be victim to them changing the transaction signature algorithm in such a way that it [leaks your private keys in the signature data that is broadcast to the world](https://bitslog.wordpress.com/2014/06/09/deterministic-signatures-subliminal-channels-and-hardware-wallets/).
 
