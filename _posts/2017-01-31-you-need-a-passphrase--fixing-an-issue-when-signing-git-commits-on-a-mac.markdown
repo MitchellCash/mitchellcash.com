@@ -5,7 +5,7 @@ title: "You Need a Passphrase: Fixing an Issue When Signing Git Commits on a Mac
 
 It's been around in Git for a while, but since GitHub announced [support for signing commits](https://help.github.com/articles/signing-commits-using-gpg), and subsequently having those commits show as verified on GitHub, I had been keen to start signing my commits.
 
-Before I could actually start signing my commits, there were a couple of steps I had to take. Firstly, I used [Homebrew](http://brew.sh) to `brew install gpg2`, to get GPG running on my machine, and secondly, I exported my keys from [Keybase](https://keybase.io), which is what I use to generate my keys, and then import them onto my machine locally for GPG to use.[^1]
+Before I could actually start signing my commits, there were a couple of steps I had to take. Firstly, I used [Homebrew](https://brew.sh) to `brew install gpg2`, to get GPG running on my machine, and secondly, I exported my keys from [Keybase](https://keybase.io), which is what I use to generate my keys, and then import them onto my machine locally for GPG to use.[^1]
 
 Everything so far was okay, until I attempted to sign my first commit. Each time I entered `git commit -S` into the terminal, it would not prompt me for the passphrase to my key and instead fail with the following response:
 
