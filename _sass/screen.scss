@@ -23,6 +23,11 @@ body {
     letter-spacing: -.02em;
 }
 
+.post-content a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .post-content pre {
     font-family: 'Source Code Pro', monospace;
     background: rgba(0,0,0,.05);
