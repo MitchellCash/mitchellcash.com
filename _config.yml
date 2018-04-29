@@ -3,6 +3,7 @@ locale                   : "en"
 title                    : "MitchellCash.com"
 description              : "I'm Mitchell Cash: sort of geeky, sort of not."
 url                      : https://mitchellcash.com
+words_per_minute         : 200
 
 # Reading Files
 exclude:
