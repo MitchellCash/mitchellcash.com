@@ -1,5 +1,8 @@
 # Site Settings
-url: https://mitchellcash.com
+locale                   : "en"
+title                    : "MitchellCash.com"
+description              : "I'm Mitchell Cash: sort of geeky, sort of not."
+url                      : https://mitchellcash.com
 
 # Reading Files
 exclude:
