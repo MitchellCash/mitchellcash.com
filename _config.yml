@@ -1,3 +1,6 @@
+# Site Settings
+url: https://mitchellcash.com
+
 # Reading Files
 exclude:
     - Gemfile
