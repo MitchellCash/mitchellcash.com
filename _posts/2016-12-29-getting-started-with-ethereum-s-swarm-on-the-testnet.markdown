@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting Started With Ethereum's Swarm on the Testnet
+tags: [ethereum, swarm, testnet]
 ---
 
 *This guide is focused on the Linux Ubuntu and Debian variants.*

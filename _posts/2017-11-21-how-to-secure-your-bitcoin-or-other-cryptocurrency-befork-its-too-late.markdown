@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Secure Your Bitcoin (or Other Cryptocurrency) "Befork" It's Too Late
+tags: [bitcoin, blockchain, cryptocurrency]
 ---
 
 [Gavin Andresen](http://gavinandresen.ninja/practice-safe-signing), known for being the lead developer on Bitcoin Core, highlights a very real cryptocurrency attack vector, especially applicable in recent times, and how best to protect your coins from such an attack.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Automate deployment of Bitcoin Nodes using Docker and Rancher"
+tags: [bitcoin, cryptocurrency, docker, full node, rancher ]
 ---
 
 Docker brings with it a range of benefits like rapid deployment, easy portability and isolation & security among other things. These benefits already sound like a good reason to run your web app or Bitcoin Node within a Docker container, but management of your docker containers still requires logging into a server somewhere and running a list of commands. Let alone scaling up nodes for a highly available application during periods of peak load. This is where Rancher comes in to make things a breeze.

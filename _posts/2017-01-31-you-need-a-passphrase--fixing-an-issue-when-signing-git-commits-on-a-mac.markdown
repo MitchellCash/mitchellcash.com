@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "You Need a Passphrase: Fixing an Issue When Signing Git Commits on a Mac"
+tags: [commit, git, GPG, signing]
 ---
 
 It's been around in Git for a while, but since GitHub announced [support for signing commits](https://help.github.com/articles/signing-commits-using-gpg), and subsequently having those commits show as verified on GitHub, I had been keen to start signing my commits.

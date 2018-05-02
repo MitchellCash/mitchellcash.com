@@ -22,6 +22,11 @@ layout: base
 
 <div class="row justify-content-center mb-3">
     <div class="col-10">
+        <span class="float-left lead text-body">
+            {% for tag in page.tags %}
+                <a class="btn btn-secondary text-capitalize" href="#">{{ tag }}</a>
+            {% endfor %}
+        </span>
         <span class="float-right lead text-body">
             <a class="text-body" href="https://twitter.com/intent/tweet?text={{ "“" | uri_escape }}{{ page.title | uri_escape }}{{ "”" | uri_escape }}{{ " by @Mitch_Cash " | uri_escape }}{{ site.url }}{{ page.url }}" target="_blank" title="Share on Twitter"><i class="fab fa-twitter-square"></i></a>
             <a class="text-body" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-square"></i></a>
