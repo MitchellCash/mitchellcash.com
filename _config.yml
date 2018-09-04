@@ -18,11 +18,6 @@ sass:
 compress_html:
     clippings       : all
 
-# Plugins (previously gems:)
-plugins:
-    - jekyll-feed
-    - jekyll-sitemap
-
 # Reading Files
 include:
     - _pages
@@ -30,3 +25,9 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - vendor # Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on
+
+# Plugins (previously gems:)
+plugins:
+    - jekyll-assets
+    - jekyll-feed
+    - jekyll-sitemap
