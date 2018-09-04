@@ -6,6 +6,8 @@ url                      : https://mitchellcash.com
 words_per_minute         : 200
 
 # Reading Files
+include:
+    - _pages
 exclude:
     - Gemfile
     - Gemfile.lock
