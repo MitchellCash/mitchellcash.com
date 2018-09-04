@@ -4,20 +4,39 @@ layout: base
 permalink: /blog/
 ---
 
-<h1 class="display-4">Blog</h1>
-
-<div class="">
-    <p><small class="text-muted">Subscribe <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a>.</small></p>
+<div class="row mb-3">
+    <div class="col">
+        <h1 class="display-4">{{ page.title }}</h1>
+        <small>Subscribe <a href="{{ '/feed.xml' | absolute_url }}">via RSS</a>.</small>
+    </div>
 </div>
 
 {% for post in site.posts %}
-<div class="card mb-3">
-    <a class="card-body text-body text-left" style="text-decoration:none;" href="{{ post.url }}">
-        <div class="card-body">
-            <p class="card-text"><small class="text-muted">{{ post.date | date: "%-d %B %Y" }}</small></p>
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="card-text">{{ post.content | strip_html | truncatewords: 50 }}</p>
+<div class="row mb-3">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <small class="text-muted">{{ post.date | date: "%-d %B %Y" }}</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="text-dark" href="{{ post.url }}" style="text-decoration:none;">
+                            <h4 class="mt-1">{{ post.title }}</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ post.url }}" style="text-decoration:none;">
+                            <p class="card-text text-muted">{{ post.content | strip_html | truncatewords: 50 }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </a>
+    </div>
 </div>
 {% endfor %}
