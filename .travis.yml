@@ -9,5 +9,7 @@ addons:
     packages:
     - libcurl4-openssl-dev # required to avoid html-proofer SSL errors
 
-install: script/bootstrap
-script: script/cibuild
+install:
+  - set -o errexit; source .travis/install.sh
+script:
+  - set -o errexit; source .travis/script.sh

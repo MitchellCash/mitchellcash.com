@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-echo " Test the rendered HTML files to make sure they're accurate...."
-bundle exec htmlproofer ./_site
