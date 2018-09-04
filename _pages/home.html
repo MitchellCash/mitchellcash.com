@@ -3,45 +3,44 @@ layout: base
 permalink: /
 ---
 
-<div class="row mb-4">
-    <div class="col"></div>
-    <div class="col">
-        <img alt="Mitchell Cash" src="https://res.cloudinary.com/mitchellcash/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_700/v1524973425/mitchellcash.com/avatar.jpg" class="d-block img-fluid mx-auto rounded-circle">
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 d-flex justify-content-center">
+        <div class="row">
+            <div class="col">
+                {% asset avatar.jpg alt="Mitchell Cash" class="rounded-circle img-fluid" @optim %}
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center display-4">Mitchell Cash</h1>
+                        <p class="lead text-center">Sort of geeky, sort of not.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col"></div>
-</div>
-<div class="row mb-4">
-    <div class="col">
-        <h1 class="display-4 mb-0 text-center">Mitchell Cash</h1>
-        <p class="lead text-center">Sort of geeky, sort of not.</p>
-    </div>
+    <div class="col-sm-4"></div>
 </div>
 <div class="row">
-    <div class="text-center col-12 col-sm-4">
-        <h6>My Projects</h6>
-        <ul class="list-unstyled">
+    <div class="col-sm-4">
+        <h6 class="text-center">My Projects</h6>
+        <ul class="list-unstyled text-center">
             <li><small><a class="text-muted" href="https://cryptochart.io">CryptoChart</a></small></li>
-            <li><small><a class="text-muted" href="https://gstcalc.io/">GSTCalc</a></small></li>
             <li><small><a class="text-muted" href="https://github.com/mitchellcash/ownUp">ownUp</a></small></li>
         </ul>
     </div>
-    <div class="text-center col col-12 col-sm-4">
-        <h6>Stuff I Like</h6>
-        <ul class="list-unstyled">
+    <div class="col-sm-4">
+        <h6 class="text-center">Stuff I Like</h6>
+        <ul class="list-unstyled text-center">
             <li><small><a class="text-muted" href="https://agilebits.com/onepassword">1Password</a></small></li>
-            <li><small><a class="text-muted" href="https://www.backblaze.com">Backblaze</a></small></li>
             <li><small><a class="text-muted" href="https://www.fastmail.com">FastMail</a></small></li>
-            <li><small><a class="text-muted" href="https://mullvad.net">Mullvad</a></li></small>
+            <li><small><a class="text-muted" href="https://mullvad.net">Mullvad</a></small></li>
         </ul>
     </div>
-    <div class="text-center col col-12 col-sm-4">
-        <h6>Open Source Contributions</h6>
-        <ul class="list-unstyled">
+    <div class="col-sm-4">
+        <h6 class="text-center">Open Source Contributions</h6>
+        <ul class="list-unstyled text-center">
             <li><small><a class="text-muted" href="https://github.com/bitcoin/bitcoin/commits?author=mitchellcash">bitcoin/bitcoin</a></small></li>
             <li><small><a class="text-muted" href="https://github.com/bitcoin-dot-org/bitcoin.org/commits?author=mitchellcash">bitcoin-dot-org/bitcoin.org</a></small></li>
-            <li><small><a class="text-muted" href="https://github.com/HospitalRun/hospitalrun-frontend/commits?author=mitchellcash">HospitalRun/hospitalrun-frontend</a></small></li>
-            <li><small><a class="text-muted" href="https://github.com/livegrep/livegrep/commits?author=mitchellcash">livegrep/livegrep</a></small></li>
-            <li><small><a class="text-muted" href="https://github.com/xbmc/xbmc/commits?author=mitchellcash">xbmc/xbmc</a></small></li>
             <li><small><a class="text-muted" href="https://github.com/mitchellcash/">and more...</a></small></li>
         </ul>
     </div>

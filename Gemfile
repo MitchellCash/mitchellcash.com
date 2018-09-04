@@ -16,6 +16,10 @@ group :jekyll_plugins do
     gem "jekyll-assets"
     gem "jekyll-feed"
     gem "jekyll-sitemap"
+
+    # Required for jekyll-assets image optimisation
+    gem "image_optim", "~> 0.26.2"
+    gem "image_optim_pack", "~> 0.5.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
