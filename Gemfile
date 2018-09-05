@@ -12,14 +12,19 @@ gem "jekyll", "~> 3.8.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-    gem "html-proofer"
-    gem "jekyll-assets"
+    gem "jekyll-assets", "~> 3.0.11"
     gem "jekyll-feed"
     gem "jekyll-sitemap"
+
+    # Required for jekyll-assets JavaScript minification
+    gem "uglifier", "~> 4.1.18"
 
     # Required for jekyll-assets image optimisation
     gem "image_optim", "~> 0.26.2"
     gem "image_optim_pack", "~> 0.5.1"
+
+    # Required for HTML checking in CI pipeline
+    gem "html-proofer", "~> 3.9.2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
