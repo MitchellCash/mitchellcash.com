@@ -1,0 +1,8 @@
+.contact-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: inherit;
+}

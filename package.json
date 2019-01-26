@@ -1,0 +1,59 @@
+{
+  "name": "MitchellCash.com",
+  "version": "0.1.0",
+  "description": "Mitchell Cash's personal website.",
+  "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "lint": "eslint --ext .js src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MitchellCash/MitchellCash.git"
+  },
+  "author": "Mitchell Cash",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "gatsby": "^2.0.98",
+    "gatsby-image": "^2.0.28",
+    "gatsby-plugin-feed": "^2.0.11",
+    "gatsby-plugin-google-analytics": "^2.0.10",
+    "gatsby-plugin-manifest": "^2.0.13",
+    "gatsby-plugin-netlify": "^2.0.7",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.0.18",
+    "gatsby-plugin-sitemap": "^2.0.4",
+    "gatsby-remark-copy-linked-files": "^2.0.8",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-remark-prismjs": "^3.2.2",
+    "gatsby-remark-reading-time": "^1.0.1",
+    "gatsby-source-filesystem": "^2.0.17",
+    "gatsby-transformer-remark": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.1.12",
+    "prism-themes": "^1.0.1",
+    "prismjs": "^1.15.0",
+    "react": "^16.6.3",
+    "react-bootstrap": "^1.0.0-beta.4",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0",
+    "react-typography": "^0.16.18",
+    "typeface-inconsolata": "0.0.54",
+    "typeface-lora": "0.0.54",
+    "typeface-open-sans": "0.0.54",
+    "typography": "^0.16.18"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}

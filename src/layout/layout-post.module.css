@@ -1,0 +1,44 @@
+/* Blog Post
+   ========================================================================== */
+
+.post-content {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+
+.post-content h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.4rem;
+}
+
+.post-content h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.post-content h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.post-content a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.post-date {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+blockquote {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,.6);
+    padding-left: 2rem !important;
+}
+
+blockquote p {
+    font-style: italic;
+}
