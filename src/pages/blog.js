@@ -3,9 +3,9 @@ import { Link, graphql } from 'gatsby'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Layout from '../layout/layout'
-import styles from './blog.module.css'
+import Layout from '../components/layout/layout'
 import SEO from '../components/site-metadata'
+import styles from './blog.module.css'
 
 export default ({ data }) => {
   return (

@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import { FaRegClock } from 'react-icons/fa'
 import Layout from './layout'
+import SEO from '../site-metadata'
 import styles from './layout-post.module.css'
-import SEO from '../components/site-metadata'
 
 export default ({ data }) => {
   const post = data.markdownRemark

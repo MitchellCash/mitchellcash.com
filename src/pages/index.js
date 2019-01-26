@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Layout from '../layout/layout'
+import Layout from '../components/layout/layout'
 
 export default ({ data }) => (
   <Layout>

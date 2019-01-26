@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Layout from '../layout/layout'
+import Layout from '../components/layout/layout'
 import SEO from '../components/site-metadata'
 
 export default ({ data }) => (
