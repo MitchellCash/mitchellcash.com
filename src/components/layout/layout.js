@@ -16,7 +16,7 @@ export default ({ children }) => (
 
     <header>
       <Container>
-        <Navbar className="p-0" expand="md" variant="light">
+        <Navbar className="p-0 mb-2 mt-2" expand="md" variant="light">
           <Link to="/" className="navbar-brand">Mitchell Cash</Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
