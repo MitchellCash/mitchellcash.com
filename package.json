@@ -7,7 +7,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint --ext .js src/"
+    "lint": "eslint --ext .js src/",
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",

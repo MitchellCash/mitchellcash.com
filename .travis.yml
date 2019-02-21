@@ -1,0 +1,14 @@
+language: node_js
+
+cache: npm
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "10"
+
+script:
+  - npm install
+  - npm run test
