@@ -1,6 +1,6 @@
 # Welcome to MitchellCash.com's Codebase
 
-Current Build Status: [![Build Status](https://travis-ci.com/MitchellCash/MitchellCash.com.svg?branch=master)](https://travis-ci.com/MitchellCash/MitchellCash.com)
+Current Build Status: [![Build Status](https://travis-ci.org/MitchellCash/MitchellCash.com.svg?branch=master)](https://travis-ci.org/MitchellCash/MitchellCash.com)
 
 Current Known Vulnerabilities: [![Known Vulnerabilities](https://snyk.io/test/github/MitchellCash/MitchellCash.com/badge.svg)](https://snyk.io/test/github/MitchellCash/MitchellCash.com) 
 
