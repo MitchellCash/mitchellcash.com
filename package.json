@@ -44,7 +44,7 @@
     "react-typography": "0.16.19",
     "typeface-inconsolata": "0.0.72",
     "typeface-lora": "0.0.72",
-    "typeface-open-sans": "0.0.54",
+    "typeface-open-sans": "0.0.75",
     "typography": "0.16.19"
   },
   "devDependencies": {
