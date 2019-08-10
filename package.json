@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.3.1",
-    "gatsby": "2.13.45",
+    "gatsby": "2.13.57",
     "gatsby-image": "2.2.8",
     "gatsby-plugin-feed": "2.3.6",
     "gatsby-plugin-google-analytics": "2.1.7",
