@@ -4,10 +4,3 @@ update_configs:
   - package_manager: "javascript"
     directory: "/"
     update_schedule: "live"
-
-    allowed_updates:
-      # All updates including indirect/sub-dependencies. The default is that
-      # indirect/sub-dependencies are only updated if they include security
-      # fixes.
-      - match:
-          update_type: "all"
