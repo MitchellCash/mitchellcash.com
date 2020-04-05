@@ -5,8 +5,9 @@ module.exports = {
   extends: [
     'react-app',
     'google',
+    'prettier'
   ],
   rules: {
-    "max-len": ["warn", { code: 80 }]
+    'max-len': ['warn', { code: 80 }]
   }
 };
