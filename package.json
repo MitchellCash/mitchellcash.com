@@ -7,6 +7,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "format": "prettier --ignore-path .eslintignore --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --cache --ext .js,.jsx",
     "lint:fix": "npm run --silent lint -- --fix",
   },
@@ -50,5 +51,6 @@
   "devDependencies": {
     "eslint-config-google": "^0.14.0",
     "eslint-config-react-app": "^5.2.1",
+    "prettier": "^2.0.3"
   }
 }
