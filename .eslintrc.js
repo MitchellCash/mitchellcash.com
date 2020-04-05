@@ -5,5 +5,8 @@ module.exports = {
   extends: [
     'react-app',
     'google',
-  ]
+  ],
+  rules: {
+    "max-len": ["warn", { code: 80 }]
+  }
 };
