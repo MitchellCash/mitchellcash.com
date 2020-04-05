@@ -4,12 +4,13 @@
   "description": "Mitchell Cash's personal website.",
   "private": true,
   "scripts": {
-    "develop": "gatsby develop",
     "build": "gatsby build",
+    "develop": "gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --ignore-path .eslintignore --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --cache --ext .js,.jsx",
     "lint:fix": "npm run --silent lint -- --fix",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
