@@ -1,7 +1,7 @@
 ---
-title: "Automate deployment of Bitcoin Nodes using Docker and Rancher"
-date: "2017-07-02"
-tags: [bitcoin, cryptocurrency, docker, full node, rancher ]
+title: 'Automate deployment of Bitcoin Nodes using Docker and Rancher'
+date: '2017-07-02'
+tags: [bitcoin, cryptocurrency, docker, full node, rancher]
 ---
 
 Docker brings with it a range of benefits like rapid deployment, easy portability and isolation & security among other things. These benefits already sound like a good reason to run your web app or Bitcoin Node within a Docker container, but management of your docker containers still requires logging into a server somewhere and running a list of commands. Let alone scaling up nodes for a highly available application during periods of peak load. This is where Rancher comes in to make things a breeze.
@@ -12,7 +12,7 @@ I had already been looking into creating Dockerised Bitcoin Nodes and with all t
 
 I will be using DigitalOcean to host Rancher and the Bitcoin Full Nodes.
 
-*Large parts of this guide have been taken verbatim from DigitalOcean's [How To Manage Multi-Node Deployments with Rancher and Docker Machine on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-manage-multi-node-deployments-with-rancher-and-docker-machine-on-ubuntu-16-04) guide. There is no need to reinvent the wheel, where it makes sense, but there are some important changes I have made to apply specifically to the deployment of Bitcoin Nodes and automating block storage provisioning to store the blockchain (as of this writing 122 GB).*
+_Large parts of this guide have been taken verbatim from DigitalOcean's [How To Manage Multi-Node Deployments with Rancher and Docker Machine on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-manage-multi-node-deployments-with-rancher-and-docker-machine-on-ubuntu-16-04) guide. There is no need to reinvent the wheel, where it makes sense, but there are some important changes I have made to apply specifically to the deployment of Bitcoin Nodes and automating block storage provisioning to store the blockchain (as of this writing 122 GB)._
 
 ### Step 1 — Creating a DigitalOcean Droplet to Host Rancher
 
@@ -68,7 +68,7 @@ Once you've registered the application, copy the **Client ID** and **Client Secr
 
 Then, under **Test and enable authentication**, click **Authenticate with GitHub**, and click **Authorize application** in the window that pops up. The page will reload and the instructions on setting up OAuth will be replaced by the **Configure Authorization** section. Add any additional users and organizations that should be given access to Rancher. If you make any changes, click the **Save** button.
 
-Next, let's create an *environment* to organise our compute hosts.
+Next, let's create an _environment_ to organise our compute hosts.
 
 ### Step 3 — Creating an Environment
 
@@ -78,9 +78,9 @@ Fill in `Bitcoin Mainnet` as the name for your project. Leave all of the other s
 
 ### Step 4 - Create a custom Docker Install script
 
-This is where things get a bit trickier. As previously mentioned the Bitcoin blockchain is currently a whopping 122 GB and we need to store that somewhere. DigitalOcean (and for that matter most other VPS providers) doesn't offer enough storage on there basic VPS plans, unless you want to start paying upwards of $160 USD per month.
+This is where things get a bit trickier. As previously mentioned the Bitcoin blockchain is currently a whopping 122 GB and we need to store that somewhere. DigitalOcean (and for that matter most other VPS providers) doesn't offer enough storage on there basic VPS plans, unless you want to start paying upwards of \$160 USD per month.
 
-To get around this I will utilise DigitalOcean's Block storage, which brings the cost down to $25 USD per month ($10 for the 1 GB instance and $15 for 150 GB of block storage). Still arguably expensive to run a single Bitcoin Node, but maybe you got rich of the first Bitcoin boom and now money is no object!
+To get around this I will utilise DigitalOcean's Block storage, which brings the cost down to $25 USD per month ($10 for the 1 GB instance and \$15 for 150 GB of block storage). Still arguably expensive to run a single Bitcoin Node, but maybe you got rich of the first Bitcoin boom and now money is no object!
 
 So before we go ahead and start launching our hosts, we want to automate the provisioning of this block storage for each host. We use Rancher now, we don't want to have to SSH into the host and configure this every time!
 
@@ -161,15 +161,16 @@ In the **Access Token** field, place your Personal Access Token for the DigitalO
 
 A new set of fields will appear on the screen. Fill in the following details:
 
-* **Name**: The name of the server you want to create. In this case, enter `Bitcoin-Host-01`.
-* **Quantity**: Leave this at 1. Increasing this will create multiple hosts and automatically name each one for you.
-* **Image**: Select the **Ubuntu 16.04.2 x64** image from the list. Some entries in the list are disabled because they are not compatible with Rancher.
-* **Size**: The size of the Droplet. Select the option for a **1GB** Droplet.
-* **Region**: The region where your Droplet will be created. In order to store the full block chain choose one that allows Block Storage. Currently, volumes are available in NYC1, SFO2, FRA1, SGP1, and TOR1.
-* **Enable IPv6**: Yes - check this box.
+- **Name**: The name of the server you want to create. In this case, enter `Bitcoin-Host-01`.
+- **Quantity**: Leave this at 1. Increasing this will create multiple hosts and automatically name each one for you.
+- **Image**: Select the **Ubuntu 16.04.2 x64** image from the list. Some entries in the list are disabled because they are not compatible with Rancher.
+- **Size**: The size of the Droplet. Select the option for a **1GB** Droplet.
+- **Region**: The region where your Droplet will be created. In order to store the full block chain choose one that allows Block Storage. Currently, volumes are available in NYC1, SFO2, FRA1, SGP1, and TOR1.
+- **Enable IPv6**: Yes - check this box.
 
 **Advanced Options**
-* **Docker Install URL**: http://your_server_ip_or_fqdn/install.sh *(this is the script we created in Step 5)*
+
+- **Docker Install URL**: http://your_server_ip_or_fqdn/install.sh _(this is the script we created in Step 5)_
 
 Finally, click Create. Rancher will use Docker Machine to create the specified Droplet and run our install script to provision the block storage and Docker on it. Rancher will also run rancher-agent on the newly created Droplet, which will in turn register with the Rancher server.
 
@@ -185,24 +186,26 @@ Once you open up your host in the Rancher UI, click on the **Add Container** but
 
 A set of fields will appear on the screen. Fill in the following details:
 
-* **Name**: bitcoind-node
-* **Select Image**: kylemanna/bitcoind
+- **Name**: bitcoind-node
+- **Select Image**: kylemanna/bitcoind
 
 **Port Map**
-* **Public Host IP**: <blank>
-* **Public Host Port**: 8333
-* **Private Container Port**: 8333
 
-* **Public Host IP**: 127.0.0.1
-* **Public Host Port**: 8332
-* **Private Container Port**: 8332
+- **Public Host IP**: <blank>
+- **Public Host Port**: 8333
+- **Private Container Port**: 8333
+
+- **Public Host IP**: 127.0.0.1
+- **Public Host Port**: 8332
+- **Private Container Port**: 8332
 
 **Volumes Tab**
-* **Volumes**: bitcoind-data:/bitcoin
+
+- **Volumes**: bitcoind-data:/bitcoin
 
 Click Create. Rancher will now run the `kylemanna/bitcoind` Docker image and expose it to the world.
 
- Now let's explore Rancher's built-in monitoring, and how to deactive and delete notes.
+Now let's explore Rancher's built-in monitoring, and how to deactive and delete notes.
 
 ### Step 7 - Monitoring and Scaling Your Deployment
 

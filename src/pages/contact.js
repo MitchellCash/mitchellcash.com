@@ -1,17 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import { FaEnvelopeSquare, FaGithubSquare, FaHackerNewsSquare } from 'react-icons/fa'
-import Layout from '../components/layout/layout'
-import SEO from '../components/site-metadata'
-import styles from './contact.module.css'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import {
+  FaEnvelopeSquare,
+  FaGithubSquare,
+  FaHackerNewsSquare
+} from 'react-icons/fa';
+import Layout from '../components/layout/layout';
+import SEO from '../components/site-metadata';
+import styles from './contact.module.css';
 
 export default ({ data }) => (
   <Layout>
-    <SEO
-      title={'Contact - ' + data.site.siteMetadata.title }
-    />
+    <SEO title={'Contact - ' + data.site.siteMetadata.title} />
     <Row>
       <Col lg="2"></Col>
       <Col xs={12} lg={8}>
@@ -25,17 +27,35 @@ export default ({ data }) => (
             <p>Howdy, I'm Mitchell Cash and here is how to contact me:</p>
             <ul className="list-unstyled ml-0">
               <li>
-                <FaEnvelopeSquare className="mr-2"/>
-                <a className={styles.contactLink} href="mailto:mitchell@mitchellcash.com">mitchell@mitchellcash.com</a>
-                <noscript>Email address protected from spambots; use a JavaScript-enabled browser to see it.</noscript>
+                <FaEnvelopeSquare className="mr-2" />
+                <a
+                  className={styles.contactLink}
+                  href="mailto:mitchell@mitchellcash.com"
+                >
+                  mitchell@mitchellcash.com
+                </a>
+                <noscript>
+                  Email address protected from spambots; use a
+                  JavaScript-enabled browser to see it.
+                </noscript>
               </li>
               <li>
                 <FaGithubSquare className="mr-2" />
-                <a className={styles.contactLink} href="https://github.com/mitchellcash ">GitHub</a>
+                <a
+                  className={styles.contactLink}
+                  href="https://github.com/mitchellcash "
+                >
+                  GitHub
+                </a>
               </li>
               <li>
                 <FaHackerNewsSquare className="mr-2" />
-                <a className={styles.contactLink} href="https://news.ycombinator.com/user?id=MitchellCash">Hacker News</a>
+                <a
+                  className={styles.contactLink}
+                  href="https://news.ycombinator.com/user?id=MitchellCash"
+                >
+                  Hacker News
+                </a>
               </li>
             </ul>
           </Col>
@@ -44,7 +64,7 @@ export default ({ data }) => (
       <Col lg="2"></Col>
     </Row>
   </Layout>
-)
+);
 
 export const query = graphql`
   query {
@@ -54,4 +74,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

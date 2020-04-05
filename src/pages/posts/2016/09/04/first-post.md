@@ -1,6 +1,6 @@
 ---
 title: First post
-date: "2016-09-04"
+date: '2016-09-04'
 ---
 
 I am thinking about sporadically writing blog posts again and after a little bit of research it seemed like utilising GitHub Pages was the way to go.

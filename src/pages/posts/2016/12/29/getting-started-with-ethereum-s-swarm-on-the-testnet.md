@@ -1,12 +1,13 @@
 ---
 title: Getting Started With Ethereum's Swarm on the Testnet
-date: "2016-12-29"
+date: '2016-12-29'
 tags: [ethereum, swarm, testnet]
 ---
 
-*This guide is focused on the Linux Ubuntu and Debian variants.*
+_This guide is focused on the Linux Ubuntu and Debian variants._
 
 ### What is Swarm?
+
 Swarm is a distributed storage platform and content distribution service, a native base layer service of the Ethereum Web3 stack. The primary objective of Swarm is to provide a sufficiently decentralized and redundant store of Ethereum’s public record, in particular to store and distribute Ðapp code and data as well as block chain data. From an economic point of view, it allows participants to efficiently pool their storage and bandwidth resources in order to provide the aforementioned services to all participants.
 
 From the end user’s perspective, Swarm is not that different from WWW, except that uploads are not to a specific server. The objective is to offer a peer-to-peer storage and serving solution that is DDOS-resistant, zero-downtime, fault-tolerant and censorship-resistant as well as self-sustaining due to a built-in incentive system which uses peer-to-peer accounting and allows trading resources for payment. Swarm is designed to deeply integrate with the ÐΞVp2p multiprotocol network layer of Ethereum as well as with the Ethereum blockchain for domain name resolution, service payments and content availability insurance (the latter is to be implemented in POC 0.4 by Q2 2017).
@@ -72,7 +73,7 @@ Make a new Ethereum testnet account using this directory
 $ $GOPATH/bin/geth --testnet --datadir $DATADIR account new
 ```
 
-You will now be prompted for a password. Once you have specified the password the output will be an address, which we will use as the base address of the swarm node. For this example let's assume the password was *SECRETPASSWORD* and the outputted address was:
+You will now be prompted for a password. Once you have specified the password the output will be an address, which we will use as the base address of the swarm node. For this example let's assume the password was _SECRETPASSWORD_ and the outputted address was:
 
 ```bash
 $ Address: {df95eefa1630da7cfb7fbc14cbdc5c5c724e706b}
@@ -107,9 +108,9 @@ You are now up and running with Swarm, so why not check out some content. The UR
 
 Some example sites:
 
-* http://localhost:8500/bzz:/theswarm.test
-* http://localhost:8500/bzz:/album.test
-* http://localhost:8500/bzz:/1b5d887cea699d18560ae6dcaf06676f5064f630978b8031d9beb6fbddd82a82
+- http://localhost:8500/bzz:/theswarm.test
+- http://localhost:8500/bzz:/album.test
+- http://localhost:8500/bzz:/1b5d887cea699d18560ae6dcaf06676f5064f630978b8031d9beb6fbddd82a82
 
 ### Upgrading
 

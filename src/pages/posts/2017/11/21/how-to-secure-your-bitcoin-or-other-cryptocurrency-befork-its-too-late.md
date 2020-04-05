@@ -1,6 +1,6 @@
 ---
 title: How to Secure Your Bitcoin (or Other Cryptocurrency) "Befork" It's Too Late
-date: "2017-11-21"
+date: '2017-11-21'
 tags: [bitcoin, blockchain, cryptocurrency]
 ---
 

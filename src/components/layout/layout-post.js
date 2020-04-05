@@ -1,15 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import { FaRegClock } from 'react-icons/fa'
-import Layout from './layout'
-import SEO from '../site-metadata'
-import styles from './layout-post.module.css'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import { FaRegClock } from 'react-icons/fa';
+import Layout from './layout';
+import SEO from '../site-metadata';
+import styles from './layout-post.module.css';
 
 export default ({ data }) => {
-  const post = data.markdownRemark
-  const pageTitle = post.frontmatter.title + ' - ' + data.site.siteMetadata.title
+  const post = data.markdownRemark;
+  const pageTitle =
+    post.frontmatter.title + ' - ' + data.site.siteMetadata.title;
 
   return (
     <Layout>
@@ -24,15 +25,20 @@ export default ({ data }) => {
         <Col xs={12} lg={8}>
           <article className={styles.postContent}>
             <h1 className="">{post.frontmatter.title}</h1>
-            <p className={styles.postDate}><small className="text-muted mb-4">{post.frontmatter.date} | <FaRegClock /> {post.fields.readingTime.text}</small></p>
+            <p className={styles.postDate}>
+              <small className="text-muted mb-4">
+                {post.frontmatter.date} | <FaRegClock />{' '}
+                {post.fields.readingTime.text}
+              </small>
+            </p>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
         </Col>
         <Col lg="2"></Col>
       </Row>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($slug: String!) {
@@ -56,4 +62,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

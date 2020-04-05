@@ -1,6 +1,6 @@
 ---
-title: "You Need a Passphrase: Fixing an Issue When Signing Git Commits on a Mac"
-date: "2017-01-31"
+title: 'You Need a Passphrase: Fixing an Issue When Signing Git Commits on a Mac'
+date: '2017-01-31'
 tags: [commit, git, GPG, signing]
 ---
 
