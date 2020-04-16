@@ -1,9 +1,10 @@
 name: CI
 
+# Trigger workflow on push and pull requests.
 on: [push, pull_request]
 
 jobs:
-  ci:
+  lint:
 
     runs-on: ubuntu-latest
 
@@ -17,5 +18,25 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Build
+        run: npm run build
+
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        # Run build on latest and LTS Node versions.
+        node-version: [12.x, 13.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies with a clean slate
+        run: npm ci
       - name: Build
         run: npm run build
