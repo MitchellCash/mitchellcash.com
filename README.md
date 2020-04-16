@@ -1,6 +1,6 @@
 # Welcome to MitchellCash.com's Codebase
 
-Current Build Status: [![Build Status](https://travis-ci.org/MitchellCash/MitchellCash.com.svg?branch=master)](https://travis-ci.org/MitchellCash/MitchellCash.com)
+CI Status: ![CI Status](https://github.com/MitchellCash/MitchellCash.com/workflows/CI/badge.svg)
 
 Live Site: [MitchellCash.com](https://mitchellcash.com)
 
