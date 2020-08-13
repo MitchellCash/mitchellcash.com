@@ -1,9 +1,37 @@
 module.exports = {
-  globals: {
-    __PATH_PREFIX__: true
+  root: true,
+
+  plugins: ['import', 'prettier'],
+
+  env: {
+    browser: true,
+    node: true,
+    es6: true
   },
-  extends: ['react-app', 'google', 'prettier'],
+
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 2018,
+    sourceType: 'module'
+  },
+
+  extends: [
+    'eslint:recommended',
+    'eslint-config-airbnb-base',
+    'plugin:nuxt/recommended',
+    'plugin:prettier/recommended',
+    'prettier/vue'
+  ],
+
   rules: {
-    'max-len': ['warn', { code: 80 }]
+    'import/order': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 100,
+        singleQuote: true,
+        trailingComma: 'none'
+      }
+    ]
   }
 };

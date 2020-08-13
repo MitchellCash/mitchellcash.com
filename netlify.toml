@@ -1,6 +1,6 @@
 [build]
-  publish = "public/"
-  command = "npm run build"
+publish = "dist/"
+command = "npm run generate"
 
 [build.environment]
-  NODE_VERSION = "12"
+NODE_VERSION = "12"
