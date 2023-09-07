@@ -14,8 +14,8 @@ npm run dev
 
 ## Production
 
-Generate a static site (static files will be in the `dist/` dir):
+Generate a static site (static files will be in the `out/` dir):
 
 ```sh
-npm run generate
+npm run build
 ```
