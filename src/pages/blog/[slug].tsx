@@ -57,8 +57,7 @@ export default function Post({ post }: Props) {
             </h1>
           </div>
 
-
-            <ReactMarkdown>{ post.content }</ReactMarkdown>
+          <ReactMarkdown>{post.content}</ReactMarkdown>
         </article>
       </div>
     </Fragment>
