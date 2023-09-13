@@ -1,5 +1,6 @@
 import Button from '@/components/button';
 import Image from 'next/image';
+import mitchellPic from '../../public/me.jpg';
 
 export default function Home() {
   return (
@@ -7,11 +8,9 @@ export default function Home() {
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="flex items-center justify-center mb-6">
           <Image
-            src="/me.jpg"
+            src={ mitchellPic }
             alt="Mitchell Cash"
             className="rounded-full h-64 w-64"
-            width={256}
-            height={256}
           />
         </div>
 
